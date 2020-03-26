@@ -1,5 +1,5 @@
 import requests
 
-name = input("your name? ")
-print("Hello ", name)
-print("..")
+r = requests.get("https://google.com")
+print(r.status_code)
+print(r.ok)
